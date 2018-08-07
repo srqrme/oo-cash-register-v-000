@@ -17,6 +17,6 @@ class CashRegister
       applied_discount = total * discount
       total_discount = total - applied_discount
       puts "After the discount, the total comes to #{total_discount}"
-    end      
+    end
   end
 end
