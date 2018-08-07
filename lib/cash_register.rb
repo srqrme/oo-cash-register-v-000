@@ -14,7 +14,8 @@ class CashRegister
   end
 
   def apply_discount
-    if discount != nil
+    binding.pry
+    if discount != 0
       discounted = discount.to_f/100
       binding.pry
       applied_discount = total * discounted
