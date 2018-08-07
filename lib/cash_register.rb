@@ -18,9 +18,9 @@ class CashRegister
     if discount != 0
       discounted = discount.to_f/100
       binding.pry
-      applied_discount = total * discounted
+      applied_discount = self.total * discounted
       binding.pry
-      total = total - applied_discount
+      self.total = self.total - applied_discount
       puts "After the discount, the total comes to #{total_discount}"
     else
       puts "There is no discount to apply."
