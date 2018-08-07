@@ -14,16 +14,16 @@ class CashRegister
   end
 
   def apply_discount
-    #binding.pry
     if discount > 0
       discounted = discount.to_f/100
-      #binding.pry
       applied_discount = self.total * discounted
-      #binding.pry
       self.total = self.total - applied_discount
         "After the discount, the total comes to $#{self.total.to_i}."
     else
       "There is no discount to apply."
     end
   end
+
+  def items
+    
 end
