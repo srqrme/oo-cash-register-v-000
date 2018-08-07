@@ -1,3 +1,5 @@
+require 'pry'
+
 class CashRegister
   attr_accessor :total, :discount
 
@@ -13,6 +15,7 @@ class CashRegister
   end
 
   def apply_discount
+    binding.pry
     if discount != nil
       discounted = discount/100
       applied_discount = total * discount
