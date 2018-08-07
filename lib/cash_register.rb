@@ -26,5 +26,6 @@ class CashRegister
 
   def items
     items << add_item
+    items
   end
 end
