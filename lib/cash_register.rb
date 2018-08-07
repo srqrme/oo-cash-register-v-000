@@ -11,4 +11,11 @@ class CashRegister
     self.total += price * quantity
     @@items << title
   end
+
+  def apply_discount
+  end
+end
+
+
+def apply_discount
 end
