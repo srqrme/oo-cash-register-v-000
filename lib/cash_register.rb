@@ -17,7 +17,7 @@ class CashRegister
     if discount != nil
       discounted = discount.to_f/100
       applied_discount = total * discounted
-      total_discount = total - applied_discount
+      total = total - applied_discount
       puts "After the discount, the total comes to #{total_discount}"
     else
       puts "There is no discount to apply."
