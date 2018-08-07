@@ -1,5 +1,4 @@
 require 'pry'
-
 class CashRegister
   attr_accessor :total, :discount
 
@@ -15,9 +14,8 @@ class CashRegister
   end
 
   def apply_discount
-    binding.pry
     if discount != nil
-      discounted = discount/100
+      discounted = discount.to_f/100
       applied_discount = total * discount
       total_discount = total - applied_discount
       puts "After the discount, the total comes to #{total_discount}"
