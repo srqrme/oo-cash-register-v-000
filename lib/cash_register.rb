@@ -12,7 +12,11 @@ class CashRegister
     @@items << title
   end
 
-  def apply_discount
-    applied_discount = self.total * discount
+  def apply_discount(total, discount)
+    if discount = 20
+      applied_discount = total * discount
+      total_discount = total - applied_discount
+      puts "After the discount, the total comes to #{total_discount}"
+    end      
   end
 end
